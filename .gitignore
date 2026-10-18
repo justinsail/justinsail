@@ -1,0 +1,5 @@
+# Vault-internal files never belong here
+CLAUDE.md
+.claude/
+.DS_Store
+node_modules/
