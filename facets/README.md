@@ -1,6 +1,6 @@
 # Facets
 
-The other angles on the same person. One page each, written in my own voice. Start with the [main README](../README.md).
+Some of the parts of me. One page each, written in my own voice. Start with the [main README](../README.md).
 
 - [Actor](actor.md)
 - [Triathlete](triathlete.md)

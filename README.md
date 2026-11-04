@@ -19,10 +19,10 @@ I'm also available for speaking, and unlike most tech guys, I'm experienced on s
 
 ## Facets
 
-These aren't hobbies. They're the other angles on the same person.
+These are some of the parts of me.
 
-- **Actor**: Atlanta performing-arts magnet, Northwestern theater, five years in LA. The origin of the translator instinct, and the reason I can walk into any room.
-- **Triathlete**: sub-3-hour half-iron is the current project; Morro Bay 2026 is the race. The training log is honest.
+- **Actor**: From North Atlanta High School's performing-arts magnet program, to theater at Northwestern University and five years as a professional actor in LA, this was the origin of my translator instinct, and the reason I'm comfortable in front of any room.
+- **Triathlete**: sub-3-hour half-iron is the current project; Morro Bay Triathlon is the race. The training log is honest.
 - **Sailor**: Day Sailor racing out of SLO. Kellan is my crew.
 - **Climate**: I work with the SLO Climate Coalition on community organizing, and built the plugin their team uses to route incoming community messages.
 - **MKP**: Men's work via the Mankind Project. Personal, not public, but it shapes how I show up.
