@@ -2,4 +2,4 @@
 
 *Part of [Justin Bradshaw](../README.md). Longer version coming.*
 
-I work with the SLO Climate Coalition on community organizing, and built the plugin their team uses to route incoming community messages.
+I helped found the SLO Climate Coalition to bring local climate leadership to the next level.

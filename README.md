@@ -23,10 +23,10 @@ These are some of the parts of me.
 
 - **Actor**: From North Atlanta High School's performing-arts magnet program, to theater at Northwestern University and five years as a professional actor in LA, this was the origin of my translator instinct, and the reason I'm comfortable in front of any room.
 - **Triathlete**: sub-3-hour half-iron is the current project; Morro Bay Triathlon is the race. The training log is honest.
-- **Sailor**: Day Sailor racing out of SLO. Kellan is my crew.
-- **Climate**: I work with the SLO Climate Coalition on community organizing, and built the plugin their team uses to route incoming community messages.
-- **MKP**: Men's work via the Mankind Project. Personal, not public, but it shapes how I show up.
-- **Father**: Kellan is cooler than me and getting faster.
+- **Sailor**: I'm a lifelong sailboat racer. Kellan is my crew.
+- **Climate**: I helped found the SLO Climate Coalition to bring local climate leadership to the next level.
+- **MKP**: My self improvement work is done partly through men's circles created by the Mankind Project. Proud to be a man who shows up aware of my own emotions and vulnerable enough to share them.
+- **Father**: Kellan is much cooler than me and Crystal is much nicer. I love them both to the moon and back.
 
 ## The log
 
