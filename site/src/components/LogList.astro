@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets';
+import { thumb, isoDate } from '../lib/log';
+import type { CollectionEntry } from 'astro:content';
+interface Props { items: CollectionEntry<'log'>[] }
+const { items } = Astro.props;
+---
+<ul class="loglist">
+  {items.map((p) => {
+    const t = thumb(p);
+    return (
+      <li>
+        {t ? <Image src={t} alt="" width={256} loading="lazy" /> : <span />}
+        <div>
+          <time datetime={isoDate(p.data.date)}>{isoDate(p.data.date)}</time>
+          <a class="t" href={`/log/${p.id}/`}>{p.data.title}</a>
+          <span class="s">{p.data.description}</span>
+        </div>
+      </li>
+    );
+  })}
+</ul>

@@ -1,0 +1,12 @@
+---
+import Base from '../../layouts/Base.astro';
+import LogList from '../../components/LogList.astro';
+import { posts } from '../../lib/log';
+const all = await posts();
+---
+<Base title="Log" description="What Justin Bradshaw is learning building with AI day to day.">
+  <p class="crumb"><a href="/">Justin Bradshaw</a> / log</p>
+  <h1 style="font-size:clamp(1.75rem,7vw,2.5rem);margin:0 0 1rem">The log</h1>
+  <p>What I'm learning building with AI day to day: tools, decisions, tradeoffs, things that worked and things that didn't. Most posts start as my MacCog newsletter. <a href="/rss.xml">RSS</a></p>
+  <LogList items={all} />
+</Base>

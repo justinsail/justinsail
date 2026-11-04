@@ -1,0 +1,28 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { posts, isoDate } from '../../lib/log';
+export async function getStaticPaths() {
+  return (await posts()).map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const article = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: entry.data.title,
+  description: entry.data.description,
+  datePublished: isoDate(entry.data.date),
+  author: { '@id': 'https://justinbradshaw.com/#person' },
+  url: new URL(`/log/${entry.id}/`, Astro.site).href,
+};
+---
+<Base title={entry.data.title} description={entry.data.description} type="article">
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(article)} />
+  <p class="crumb"><a href="/">Justin Bradshaw</a> / <a href="/log/">log</a></p>
+  <article class="post">
+    <h1>{entry.data.title}</h1>
+    <p class="meta"><time datetime={isoDate(entry.data.date)}>{isoDate(entry.data.date)}</time>{entry.data.source && ` · ${entry.data.source}`}</p>
+    <div class="post-body"><Content /></div>
+  </article>
+</Base>
