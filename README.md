@@ -1,6 +1,6 @@
 # Justin Bradshaw
 
-Twenty-one years ago I made an unlikely career choice: I gave up professional acting and became something else entirely, a Digital Life Coach (emphasis on the digital life part). I moved from a creative, emotion-based world and landed in the analytical, evidence-based world of tech. Even though they are worlds apart on the surface, I realized I was kinda doing what I'd been doing on stage: translating between worlds that don't speak the same language. The actors understood emotion but not systems. The engineers understood systems but not people. I kept ending up in the middle, straddling both sides of the brain. Now the fault line runs between humans and AI, and I'm standing right there on it again, deep in the valley between them, sharing what I find.
+My career started on stage and ended up in tech, as a Digital Life Coach (emphasis on the digital life part). I moved from a creative, emotion-based world and landed in the analytical, evidence-based world of tech. Even though they are worlds apart on the surface, I realized I was kinda doing what I'd been doing on stage: translating between worlds that don't speak the same language. The actors understood emotion but not systems. The engineers understood systems but not people. I kept ending up in the middle, straddling both sides of the brain. Now the fault line runs between humans and AI, and I'm standing right there on it again, deep in the valley between them, sharing what I find.
 
 ## What I do now
 
@@ -21,13 +21,12 @@ I'm also available for speaking, and unlike most tech guys, I'm experienced on s
 
 These aren't hobbies. They're the other angles on the same person.
 
-- **Actor** (1990–2005): Atlanta performing-arts magnet, Northwestern theater, five years in LA. The origin of the translator instinct, and the reason I can walk into any room.
+- **Actor**: Atlanta performing-arts magnet, Northwestern theater, five years in LA. The origin of the translator instinct, and the reason I can walk into any room.
 - **Triathlete**: sub-3-hour half-iron is the current project; Morro Bay 2026 is the race. The training log is honest.
 - **Sailor**: Day Sailor racing out of SLO. Kellan is my crew.
 - **Climate**: I work with the SLO Climate Coalition on community organizing, and built the plugin their team uses to route incoming community messages.
 - **MKP**: Men's work via the Mankind Project. Personal, not public, but it shapes how I show up.
-- **Collector**: G4 Cube, trashcan Mac Pro, original Palm Pilot. Nostalgia as a form of systems thinking.
-- **Father**: Kellan, born 2011. He is cooler than me and getting faster.
+- **Father**: Kellan is cooler than me and getting faster.
 
 ## The log
 

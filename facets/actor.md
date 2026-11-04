@@ -1,4 +1,4 @@
-# Actor (1990 to 2005)
+# Actor
 
 *Part of [Justin Bradshaw](../README.md). Longer version coming.*
 
