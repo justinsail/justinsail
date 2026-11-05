@@ -1,5 +1,6 @@
 ---
 import '../styles.css';
+import { spine, links, profiles } from '../lib/readme';
 interface Props { title?: string; description?: string; type?: 'website' | 'article' }
 const { title, description = 'Justin Bradshaw: Digital Life Coach, MacCog, Apple and AI consulting in San Luis Obispo.', type = 'website' } = Astro.props;
 const fullTitle = title ? `${title} · Justin Bradshaw` : 'Justin Bradshaw';
@@ -13,13 +14,12 @@ const person = {
   url: 'https://justinbradshaw.com/',
   image: image.href,
   jobTitle: 'Digital Life Coach',
-  description: 'Apple consultant and Digital Life Coach in San Luis Obispo, California. Founder of MacCog and the Digital Life Coach Operating System (dlcOS). Former professional actor; speaks on the human side of the AI transition.',
+  description: spine,
   email: 'mailto:justin@maccog.com',
   worksFor: { '@type': 'Organization', name: 'MacCog', url: 'https://maccog.com' },
   alumniOf: { '@type': 'CollegeOrUniversity', name: 'Northwestern University' },
   address: { '@type': 'PostalAddress', addressLocality: 'San Luis Obispo', addressRegion: 'CA', addressCountry: 'US' },
-  knowsAbout: ['Apple consulting', 'macOS', 'AI consulting', 'Claude', 'Personal knowledge management', 'Digital life coaching'],
-  sameAs: ['https://github.com/justinsail', 'https://www.linkedin.com/in/justinbradshaw'],
+  sameAs: profiles,
 };
 ---
 <!doctype html>
@@ -48,6 +48,6 @@ const person = {
 <a class="skip" href="#main">Skip to content</a>
 <nav><div class="wrap"><a class="name" href="/">Justin Bradshaw</a><a href="/#facets">Facets</a><a href="/log/">Log</a><a href="/#speaking">Speaking</a><a href="https://github.com/justinsail/justinsail">GitHub</a></div></nav>
 <main class="wrap" id="main"><slot /></main>
-<footer><div class="wrap"><ul><li><a href="mailto:justin@maccog.com">justin@maccog.com</a></li><li><a href="https://www.linkedin.com/in/justinbradshaw">LinkedIn</a></li><li><a href="https://github.com/justinsail/justinsail">GitHub</a></li><li><a href="/rss.xml">RSS</a></li></ul><p class="meta">Rendered from <a href="https://github.com/justinsail/justinsail">github.com/justinsail/justinsail</a>.</p></div></footer>
+<footer><div class="wrap"><ul>{links.filter((l) => !l.href.includes('justinbradshaw.com')).map((l) => <li><a href={l.href}>{l.label === 'Email' ? l.text : l.label}</a></li>)}<li><a href="/rss.xml">RSS</a></li></ul><p class="meta">Rendered from <a href="https://github.com/justinsail/justinsail">github.com/justinsail/justinsail</a>.</p></div></footer>
 </body>
 </html>

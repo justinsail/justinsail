@@ -4,7 +4,7 @@ import Base from '../layouts/Base.astro';
 import LogList from '../components/LogList.astro';
 import headshot from '../assets/photos/headshot.jpg';
 import maccog from '../assets/logo-maccog.png';
-import { spine, whatIDo, facetsIntro, facets, logIntro, note, inline } from '../lib/readme';
+import { spine, whatIDo, speakingIndex, facetsIntro, facets, logIntro, note, inline } from '../lib/readme';
 import { facetPhotos, facetLogos } from '../lib/photos';
 import { posts } from '../lib/log';
 const recent = (await posts()).slice(0, 5);
@@ -20,8 +20,8 @@ const recent = (await posts()).slice(0, 5);
 
   <h2>What I do now</h2>
   <p class="org"><Image src={maccog} alt="" width={80} /><a href="https://maccog.com">MacCog</a></p>
-  {whatIDo.map((p) => (
-    <p id={p.startsWith("I'm also available for speaking") ? 'speaking' : undefined} set:html={inline(p)} />
+  {whatIDo.map((p, i) => (
+    <p id={i === speakingIndex ? 'speaking' : undefined} set:html={inline(p)} />
   ))}
 
   <h2 id="facets">Facets</h2>

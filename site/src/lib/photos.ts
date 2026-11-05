@@ -42,3 +42,9 @@ export const facetPhotos: Record<string, Photo[]> = {
 export const facetLogos: Record<string, { src: ImageMetadata; alt: string }> = {
   climate: { src: slocc, alt: 'SLO Climate Coalition' },
 };
+
+// Every photo key must match a facet name in README.md, or its photos would silently vanish.
+import { facets } from './readme';
+for (const key of [...Object.keys(facetPhotos), ...Object.keys(facetLogos)]) {
+  if (!facets.some((f) => f.slug === key)) throw new Error(`photos.ts has photos for "${key}", but README.md has no facet by that name`);
+}

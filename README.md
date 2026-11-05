@@ -12,10 +12,12 @@ I'm also available for speaking, and unlike most tech guys, I'm experienced on s
 
 ## Where to find me
 
-- **justinbradshaw.com**: the front door
-- **This repo (`justinsail/justinsail`)**: the canonical version; copies on other platforms may lag
-- **Email:** justin@maccog.com
+- **Website:** [justinbradshaw.com](https://justinbradshaw.com), the front door
+- **GitHub:** [github.com/justinsail](https://github.com/justinsail). This repo (`justinsail/justinsail`) is the canonical version; copies on other platforms may lag
+- **Email:** [justin@maccog.com](mailto:justin@maccog.com)
 - **LinkedIn:** [linkedin.com/in/justinbradshaw](https://www.linkedin.com/in/justinbradshaw)
+- **X:** [x.com/justinsail](https://x.com/justinsail)
+- **Instagram:** [instagram.com/justinsail](https://instagram.com/justinsail)
 
 ## Facets
 

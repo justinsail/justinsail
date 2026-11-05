@@ -32,8 +32,25 @@ const paragraphs = (key: string) =>
 const bullets = (key: string) =>
   (sections[key] ?? []).filter((l) => l.startsWith('- ')).map((l) => l.slice(2).trim());
 
+// Fail the build loudly if the README loses a section the site depends on.
+for (const key of ['What I do now', 'Where to find me', 'Facets', 'The log', 'A note on this page']) {
+  if (!sections[key]) throw new Error(`README.md is missing the "## ${key}" section the site renders`);
+}
+
 export const spine = paragraphs('_top')[0] ?? '';
+if (!spine) throw new Error('README.md has no opening paragraph');
+
+/** "Where to find me" bullets: label plus the first link in the line. */
+export const links = bullets('Where to find me').map((b) => {
+  const label = (b.match(/^\*\*([^*:]+):?\*\*/)?.[1] ?? '').trim();
+  const m = b.match(/\[([^\]]+)\]\(([^)\s]+)\)/);
+  return { label, text: m?.[1] ?? '', href: m?.[2] ?? '' };
+}).filter((l) => l.href);
+/** Public profile URLs for the JSON-LD sameAs list (everything except the site itself and email). */
+export const profiles = links.map((l) => l.href).filter((h) => h.startsWith('https://') && !h.includes('justinbradshaw.com'));
 export const whatIDo = paragraphs('What I do now');
+export const speakingIndex = whatIDo.findIndex((p) => /available for speaking/i.test(p));
+if (speakingIndex < 0) throw new Error('README "What I do now" has no speaking paragraph; the nav links to #speaking');
 export const facetsIntro = paragraphs('Facets')[0] ?? '';
 export const facets = bullets('Facets').map((b) => {
   const m = b.match(/^\*\*([^*]+)\*\*:\s*(.*)$/);
